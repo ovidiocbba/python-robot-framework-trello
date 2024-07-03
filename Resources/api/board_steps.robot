@@ -13,7 +13,7 @@ Create a board
     ${random_string}     Generate Random String  3  [NUMBERS]
     ${board_name}=       Set Variable        AUT Board ${random_string}
     ${id_organization}  ${id_board}  ${actual_response}=    Create a board with the following name  ${board_name}
-    [return]  ${id_organization}  ${id_board}
+    RETURN  ${id_organization}  ${id_board}
 
 Create a board with the following name
     [Arguments]     ${board_name}
@@ -21,9 +21,9 @@ Create a board with the following name
     ${body}=             Create dictionary   idOrganization=${id_organization}   name=${board_name}
     ${actual_response}=         Send request  POST      ${boards_endpoint}      ${body}
     ${id_board}=         Set Variable        ${actual_response.json()['id']}
-    [return]  ${id_organization}  ${id_board}   ${actual_response}
+    RETURN  ${id_organization}  ${id_board}   ${actual_response}
 
 Get a Board
     [Arguments]     ${id_board}
     ${response}     Send request  GET  ${boards_endpoint}/${id_board}
-    [return]    ${response}
+    RETURN    ${response}

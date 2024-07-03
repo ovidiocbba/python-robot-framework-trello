@@ -15,12 +15,12 @@ Create a workspace
     ${body}=        Create dictionary       displayName=${workspace_name}
     ${response}  Send request  POST  ${organizations_endpoint}  ${body}
     ${id_organization}=     Set Variable        ${response.json()['id']}
-    [return]  ${id_organization}
+    RETURN  ${id_organization}
 
 Get information about a workspace
     [Arguments]     ${id_organization}
     ${response}     Send request  GET  ${organizations_endpoint}/${id_organization}
-    [return]    ${response}
+    RETURN    ${response}
 
 Delete a workspace
     [Arguments]     ${id_organization}

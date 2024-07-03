@@ -15,7 +15,7 @@ Read expected json
     [Arguments]  ${json_filename}
     ${body}     Get Binary File  ./Resources/api/json/${json_filename}
     ${body}     evaluate    json.loads('''${body}''')    json
-    [return]  ${body}
+    RETURN  ${body}
 
 # Validations.
 Verify schema

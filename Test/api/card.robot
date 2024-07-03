@@ -90,7 +90,7 @@ Verify that an attachment with a 256-character name can be created on a Card
     ${id_card}=        Create a card  ${id_list}    ${card_name}
 
     ${random_attachment_name}=     Generate Random String  256  [LETTERS]
-    ${attachment_url}=   Set Variable  https://blog.trello.com/hubfs/Cars-covers-and-colors-2%20%281%29.png
+    ${attachment_url}=   Set Variable  https://atlassianblog.wpengine.com/wp-content/uploads/2024/05/atlassian_disconnect_colour_1190-1560x760.jpg
     ${body}=             Create dictionary  name=${random_attachment_name}  url=${attachment_url}
     ${endpoint}=         Set Variable       ${cards_endpoint}/${id_card}/attachments
     ${actual_response}=  Send request       POST     ${endpoint}      ${body}

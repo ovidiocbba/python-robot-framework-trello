@@ -14,4 +14,4 @@ Create a list on a board
     ${endpoint}=         Set Variable  ${boards_endpoint}/${id_board}/${lists_endpoint}
     ${actual_response}=  Send request  POST     ${endpoint}     ${body}
     ${id_list}=          Set Variable        ${actual_response.json()['id']}
-    [return]  ${id_list}
+    RETURN  ${id_list}
