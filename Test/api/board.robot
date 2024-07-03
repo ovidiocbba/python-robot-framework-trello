@@ -38,7 +38,7 @@ Verify that a board can be created in a workspace
     ${board_response}       Get a Board          ${id_board}
     Verify body response    ${board_response}    ${expected_response}
 
-Create a new Board with one character for the name
+Verify that a board can be created with one character for the name
     [Tags]  acceptance
     ${board_name}=         Set Variable        A
     ${id_organization}  ${id_board}  ${actual_response}=    Create a board with the following name   ${board_name}
