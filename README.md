@@ -63,55 +63,55 @@ List of test cases implemented in the Framework.
     <th>Tag</th>
   </tr>
   <tr>
-    <td><b>TC-00001</b></td>
+    <td><b>001</b></td>
     <td>Verify that a workspace can be created</td>
     <td><code>workspace</code></td>
     <td align = 'center'><code> smoke, functional</code></td>
   </tr>
   <tr>
-    <td><b>TC-00002</b></td>
+    <td><b>002</b></td>
     <td>Verify that a Workspace can't be created with an empty display name</td>
     <td><code>workspace</code></td>
     <td align = 'center'><code>negative</code></td>
   </tr>
   <tr>
-    <td><b>TC-00003</b></td>
+    <td><b>003</b></td>
     <td>Verify that a board can be created in a workspace</td>
     <td><code>board</code></td>
     <td align = 'center'><code>smoke, functional</code></td>
   </tr>
   <tr>
-    <td><b>TC-00004</b></td>
-    <td>Create a new Board with one character for the name</td>
+    <td><b>004</b></td>
+    <td>Verify that a board can be created with one character for the name</td>
     <td><code>board</code></td>
     <td align = 'center'><code>acceptance</code></td>
   </tr>
   <tr>
-    <td><b>TC-00005</b></td>
+    <td><b>005</b></td>
     <td>Verify that a list can be created in a Board</td>
     <td><code>list</code></td>
     <td align = 'center'><code>smoke, functional</code></td>
   </tr>
   <tr>
-    <td><b>TC-00006</b></td>
+    <td><b>006</b></td>
     <td>Verify that a list can be archived</td>
     <td><code>list</code></td>
     <td align = 'center'><code>functional</code></td>
   </tr>
   <tr>
-    <td><b>TC-00007</b></td>
+    <td><b>007</b></td>
     <td>Verify that a card can be created</td>
     <td><code>card</code></td>
     <td align = 'center'><code>functional</code></td>
   </tr>
   <tr>
-    <td><b>TC-00008</b></td>
+    <td><b>008</b></td>
     <td>Verify that a card can be moved to another list</td>
     <td><code>card</code></td>
     <td align = 'center'><code>e2e</code></td>
   </tr>
   <tr>
-    <td><b>TC-00009</b></td>
+    <td><b>009</b></td>
     <td>Verify that an attachment with a 256-character name can be created on a Card</td>
     <td><code>card</code></td>
     <td align = 'center'><code>boundary</code></td>
